@@ -1,17 +1,15 @@
 {
-  "dependencies": {
-    "express": "^4.17.2"
-  },
-  "name": "microservicio1",
+  "name": "microservicio2",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "start": "npm index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "express": "^4.17.2"
+  }
 }
