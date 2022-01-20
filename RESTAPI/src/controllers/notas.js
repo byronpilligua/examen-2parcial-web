@@ -4,7 +4,7 @@ class EstudianteController{
 
   async getAll(req, res){
     try {
-      const data = await EstudianteService.getAll();
+      const data = await NotasService.getAll();
       res.json({data});
     } catch (error) {
       res.json({error});
@@ -14,7 +14,7 @@ class EstudianteController{
   async get(req, res){
     try {
       const {id} = req.params;
-      const data = await EstudianteService.get(id);
+      const data = await NotasService.get(id);
       res.json({data});
     } catch (error) {
       res.json({error});
@@ -24,7 +24,7 @@ class EstudianteController{
   async update(req, res){
     try {
       const {id} = req.params;
-      const data = await EstudianteService.update(id, req.body);
+      const data = await NotasService.update(id, req.body);
       res.json({data});
     } catch (error) {
       res.json({error});
@@ -34,7 +34,7 @@ class EstudianteController{
   async updatePassword(req, res){
     try {
       const {id} = req.params;
-      const data = await EstudianteService.updatePassword(id, req.body);
+      const data = await NotasService.updatePassword(id, req.body);
       res.json({data});
     } catch (error) {
       res.json({error});
@@ -44,7 +44,7 @@ class EstudianteController{
   async delete(req, res){
     try {
       const {id} = req.params;
-      const data = await EstudianteService.delete(id);
+      const data = await NotasService.delete(id);
       res.json({data});
     } catch (error) {
       res.json({error});
@@ -52,4 +52,4 @@ class EstudianteController{
   }
 }
 
-module.exports = new EstudianteController();
+module.exports = new NotasController();

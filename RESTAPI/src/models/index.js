@@ -1,5 +1,5 @@
 module.exports = {
-  FacultadModel: require('./facultad'),
-  EstudianteModel: require('./estudiante'),
+  FacultadModel: require('./Notas'),
+  EstudianteModel: require('./Matriculas'),
   ActividadModel: require('./actividad')  
 };

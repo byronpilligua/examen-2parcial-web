@@ -1,6 +1,6 @@
 module.exports = {
-  FacultadRoute: require('./facultad'),
+  notasdRoute: require('./notas'),
   AuthRoute: require('./auth'),
   ActividadRoute: require('./actividad'),
-  EstudianteRoute: require('./estudiante')
+  matriculaRoute: require('./matricula')
 }

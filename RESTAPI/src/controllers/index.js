@@ -1,6 +1,6 @@
 module.exports = {
-  FacultadController: require('./facultad'),
+  FacultadController: require('./Matricula'),
   AuthController: require('./auth'),
   ActividadController: require('./actividad'),
-  EstudianteController: require('./estudiante')
+  EstudianteController: require('./notas')
 }

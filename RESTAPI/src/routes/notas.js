@@ -1,28 +1,28 @@
 const {Router} = require('express');
-const {FacultadController} = require('../controllers');
+const {notasController} = require('../controllers');
 const {verificarToken} = require('../middlewares');
 const router = Router();
 
-router.get('/',FacultadController.getAll);
+router.get('/',notasController.getAll);
 
 router.get('/get',
   verificarToken,
-  FacultadController.get
+  notasController.get
 );
 
 router.patch('/',
   verificarToken,
-  FacultadController.update
+  notasController.update
 );
 
 router.put('/',
   verificarToken,
-  FacultadController.updatePassword
+  notasController.updatePassword
 );
 
 router.delete('/',
   verificarToken,
-  FacultadController.delete
+  notasController.delete
 );
 
 module.exports = router;

@@ -34,7 +34,7 @@ class FacultadController{
   async updatePassword(req, res){
     try {
       const {idFacultad} = req;
-      const data = await FacultadService.updatePassword(idFacultad,req.body);
+      const data = await MatriculaService.updatePassword(idFacultad,req.body);
       res.json({data});
     } catch (error) {
       res.json({error});
@@ -44,7 +44,7 @@ class FacultadController{
   async delete(req, res){
     try {
       const {idFacultad} = req;
-      const data = await FacultadService.delete(idFacultad);
+      const data = await NotasService.delete(idFacultad);
       res.json({data});
     } catch (error) {
       res.json({error});
@@ -52,4 +52,4 @@ class FacultadController{
   }
 }
 
-module.exports = new FacultadController();
+module.exports = new MatriculaController();
